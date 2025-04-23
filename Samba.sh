@@ -11,7 +11,7 @@ sudo apt-get install -y samba
 # 2. Buat direktori untuk sharing
 sudo mkdir -p "$SHARE_DIR"
 sudo chown nobody:nogroup "$SHARE_DIR"
-sudo chmod 0775 "$SHARE_DIR"
+sudo chmod 777 "$SHARE_DIR"
 
 # 3. Backup dan edit konfigurasi samba
 sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.backup
